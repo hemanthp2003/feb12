@@ -1,0 +1,28 @@
+apples=50
+drink=80
+perfume=500
+maggie=68
+honey=69
+cname=input('enter customer name')
+cno=int(input('enter customer number'))
+app=int(input('enter no of kgs of apples:'))
+dr=int(input('enter no of drinks:'))
+pr=int(input('enter no of perfumes:'))
+ma=int(input('enter no of maggies:'))
+ho=int(input('enter no of honey bottles:'))
+bill=(apples*app)+(drink*dr)+(perfume*pr)+(maggie*ma)+(honey*ho)
+if bill>5000:
+    discount=bill*0.10
+    print('discount is:',discount)
+elif bill>3000:
+    discount=bill*0.8
+    print('discount is:',discount)
+elif bill>2000:
+    discount=bill*0.3
+    print('discount is:',discount)
+elif bill>3000:
+    tax=(bill*0.18)/100
+    print('tax is:',tax)
+else:
+    tax=(bill*0.18)/100
+    print('the tax is:',tax)
